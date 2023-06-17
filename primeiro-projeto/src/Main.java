@@ -13,15 +13,26 @@ public class Main {
         double media = (9.8 + 6.3 + 8.0) / 3;
         System.out.println("Média do filme: " + media);
 
+        String nomeFilme = "Top Gun: Maverick";
+        System.out.println(String.format("O filme %s possui a média de %.1f", nomeFilme, media));
+
         String sinopse;
         sinopse = "Filme de aventura com galã dos anos 80";
         System.out.println("Sinopse do Filme: " + sinopse);
 
+        //Text Block
         String descricao = """
                     Filme: Top Gun: Maverick
                     Ano de lançamento: 
                 """ + anoDeLancamento;
 
-        System.out.println(descricao);
+        String descricaoFormatada = """
+                    Filme: %s
+                    Ano de lançamento: %d
+                    Nota do Filme: %.0f
+                    Sinopse: %s
+                """.formatted(nomeFilme, anoDeLancamento, notaDoFilme, sinopse);
+
+        System.out.println(descricaoFormatada);
     }
 }
