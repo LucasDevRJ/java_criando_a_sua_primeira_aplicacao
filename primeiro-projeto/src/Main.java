@@ -34,5 +34,46 @@ public class Main {
                 """.formatted(nomeFilme, anoDeLancamento, notaDoFilme, sinopse);
 
         System.out.println(descricaoFormatada);
+
+        int classificacao;
+        classificacao = (int) (media / 2);
+
+        System.out.println(String.format("Classificação: %d", classificacao));
+
+        //declarando variáveis com os tipos de dados
+        long faixaEtariaLong = 24;
+        int faixaEtariaInt = 18;
+        byte faixaEtariaByte = 21;
+        short faixaEtariaShort = 22;
+        double faixaEtariaDouble = 25.0;
+
+        //não irá funcionar porque o byte não armazena um inteiro
+        //byte faixaEtariaByteParaInt = faixaEtariaInt;
+
+        //também não funciona pois o short não armazena valores em inteiro
+        //short faixaEtariaShortParaInt = faixaEtariaInt;
+
+        //irá funcionar porque o int armazena byte
+        int faixaEtariaIntParaByte = faixaEtariaByte;
+
+        //irá funcionar porque o int armazena short
+        int faixaEtariaIntParaShort = faixaEtariaShort;
+
+        //também dará erro porque long aguenta mais bits que o int
+        //int faixaEtariaIntParaLong = faixaEtariaLong;
+
+        //double possui ponto flutuante, assim também dando erro
+        //int faixaEtariaIntParaDouble = faixaEtariaDouble;
+
+        //funciona porque o long armazena a quantidade de bits que o int possui
+        long faixaEtariaLongParaInt = faixaEtariaInt;
+
+        //também funciona, mas os números após a virgula não serão armazenados
+        double faixaEtariaDoubleParaInt = faixaEtariaInt;
+
+        /*
+            Basicamente, para haver o casting entre tipos primitivo
+            o tipo conversor deve aguentar o armazenamento do tipo a ser convertido
+         */
     }
 }
