@@ -3,6 +3,8 @@ public class Main {
         System.out.println("Esse é o Screen Match");
         System.out.println("Filme: Top Gun: Maverick");
 
-        int ano = 2022;
+        int anoLancamentoFilme = 2022;
+
+        System.out.println("Ano de lançamento: " + anoLancamentoFilme);
     }
 }
