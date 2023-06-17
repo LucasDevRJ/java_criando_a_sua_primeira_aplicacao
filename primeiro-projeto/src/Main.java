@@ -11,5 +11,8 @@ public class Main {
 
         double media = (9.8 + 6.3 + 8.0) / 3;
         System.out.println(media);
+        
+        String sinopse;
+        sinopse = "Filme de aventura com galã dos anos 80";
     }
 }
