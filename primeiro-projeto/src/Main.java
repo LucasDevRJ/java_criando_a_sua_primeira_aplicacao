@@ -75,5 +75,13 @@ public class Main {
             Basicamente, para haver o casting entre tipos primitivo
             o tipo conversor deve aguentar o armazenamento do tipo a ser convertido
          */
+
+        //casting implícito
+        int x = 10;
+        double y = x;
+
+        //casting explícito
+        double c = 10.5;
+        int r = (int) c;
     }
 }
