@@ -12,10 +12,10 @@ public class Leitura {
         int ano = leitura.nextInt();
 
         System.out.printf("Digite a sua nota de 0 a 10 para o %s:", filme);
-        int nota = leitura.nextInt();
+        double nota = leitura.nextDouble();
 
         System.out.printf("\nFilme: %s", filme);
         System.out.printf("\nAno: %d", ano);
-        System.out.printf("\nNota: %d", nota);
+        System.out.printf("\nNota: %.1f", nota);
     }
 }
